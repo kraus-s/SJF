@@ -4,15 +4,16 @@ import streamlit as st
 # ---------------
 
 def title_page():
-    st.title("The long Fight of the norwegian Sami for Recognition")
+    st.title("The Fight of the norwegian Sami for Recognition")
     st.write("This WebApp was desighned to show the work of the Study Week Human and Social Sciences at the Seminar for Nordic Studies at the University of Basel.")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/1/1b/Sami_flag.svg", caption=None, width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/1/1b/Sami_flag.svg", caption="source: wikimedia, public domain", width=None, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+
 
 def milestones_page():
     st.title("Introduction")
     st.write("The Norwegian state made a conscious effort over more than 100 years to assimilate the Sami. The policy was introduced in the field of culture “with schools as the battlefield and teachers as the frontline soldiers”. Language was the main subject being a measure and symbol of success of the policy. The so-called Fornorsking or English norweganization builds a spereate era of the Sami’s history both historically and in a contemporary perspective from around 1850-1980.")
     st.write("During the 19th century education became the cornerstone of any western state. The Sami which were clearly distinct people, living in certain places, in concentrated communities. This problem called for a national policy. While the policy of assimilation is inseparable from the emergence of any strong state Norway’s differentiates itself thought their determined, continuous and long-lasting conduct of their assimilation policy. This makes it morally problematic and sensitive to this very day.")
-    st.image("Gian1.png")
+    st.image("Gian1.png", caption="source: www.historiana.eu")
     st.write("The Human Rights of the Sami")
     current_year = st.select_slider("Timeline", options=milestones.keys())
     milestone = milestones[current_year]
@@ -28,15 +29,15 @@ def Sami_page():
     st.write("Who are the Sami?")
     st.title("Definition")
     st.write("The Sami are indigenous inhabitants in Nordic countries. According to the law of Sami, a person is a Sami if they define themselves as Sami and if they speak Sami as their native language or if their ancestors are Sami. Today, the Sami are a minority in their own area called Sápmi. Sápmi is their traditional settlement area that extends over Finland, Norway, Sweden and Kola Peninsula in Russia. Overall, there are approximately 80’000-100’000 Sami in Sápmi.")
-    st.image("http://homepagedesigner.telekom.de/imageprocessor/processor.cls/CMTOI/cm4all/com/widgets/PhotoToi/11/39/37/40/13cc12d4059/scale_1200_0%3Bdonotenlarge/13cc12d4059")
+    st.image("http://homepagedesigner.telekom.de/imageprocessor/processor.cls/CMTOI/cm4all/com/widgets/PhotoToi/11/39/37/40/13cc12d4059/scale_1200_0%3Bdonotenlarge/13cc12d4059", caption="source: www.homepagedesigner.telekom.de")
     st.title("The Life of the Sami People ")
     st.write("For hundreds of years, the Sami people spent their lives roaming around the forests of Scandinavia as hunter-gatherers following wild herds of reindeer. In order to sustain survival during the harsh winter the Sami would process reindeers and other animals like bears to food and clothes or even to build shelter. During summer they would fish and gather wild plants to eat. Their nomadic lifestyle required their housing to be lightweight and handy. The nights would be spent in a hide tent, a “Lavvu”. They also built permanent houses called “Gamma” or “Goahti”. Over the last century the Sami’s lifestyle has drastically changed. They continue to practice elements of their traditional lifestyle but most Sami live a lifestyle similar to a modern western suburban family. Today around 60 % engage in modern jobs in the tourism, music, media or art.")
-    st.image("https://a4.pbase.com/g1/15/210915/2/103740811.Kfyh7Prg.jpg")
+    st.image("https://a4.pbase.com/g1/15/210915/2/103740811.Kfyh7Prg.jpg", caption="source: www.a4.pbase.com")
     st.title("The Religion of the Sami People")
     st.write("Early documents describe the Sami as pagans. The Sami used to practice a natural religion. According to their belief, the world was divided into three spheres: the subsurface, the earthly and the heavenly sphere. Every sphere has its own gods and beings. The Sami people were later christianized by the state and the church. Today the Sami’s old religion is not commonly practiced amongst members of the culture.")
     st.title("The Clothing of the Sami People")
     st.write("The traditional Sami garment is the “Gakti”. It is a long colorful tunica worn over leggings. The “Gakti” is traditionally blue, red and yellow. Originally, it was made from fur but later they used cotton, wool and silk. The Sami use silk scarves, silver jewelry and hats as accessories.")
-    st.image("https://2.bp.blogspot.com/-x3mZjNyQcpI/Wdl4I_aqONI/AAAAAAAAZ8U/HmxIutGYZUo1HAXAPr2oP9nO0Bvo4eN1ACLcBGAs/s400/3.jpg")
+    st.image("https://2.bp.blogspot.com/-x3mZjNyQcpI/Wdl4I_aqONI/AAAAAAAAZ8U/HmxIutGYZUo1HAXAPr2oP9nO0Bvo4eN1ACLcBGAs/s400/3.jpg", caption="source: www.2.blogspot.com")
 
 def Language_page():
     st.write("Cultural and Linguistical Development")
@@ -45,7 +46,7 @@ def Language_page():
     st.write("Though the language can be related to finish or Scandinavian languages their origins are unclear. It is presumed that the language first developed on the southern side of  Lake Onega and Lake Ladoga, spreadingfrom there. On their journey the Sami speaking people encountered dialects of other ancient languages which are extinct today, but they adapted some of their words into their own language making it difficult today to properly derive where the language originated from.")
     st.write("To this day Sami is largely transmitted orally. There is only little literature like newspaper reports or letters making it difficult to say how the language changed over time. Due to the lack of a uniform orthography Sami languages cannot be used easily in education or government. Most people that speak Sami today are bilingual in the native language of the country they live in.")
     st.write("The first ever written information about the Sami was published by a Roman called Tacitus in the year 98 B.C., calling the people Fenni. This proves that the Sami culture goes further back than most modern languages spoken today.")
-    st.image("sami-map1.png")
+    st.image("sami-map1.png", caption="source: www.wordpress.com, with own markings")
 
 def Human_page():
     st.write("Human Rights")
@@ -53,7 +54,7 @@ def Human_page():
     st.write("Human rights are rights we obtain simply based on being human. Interestingly, they are not granted by any states. Each state can adapt and include human rights in their own system of law, but they are not obliged to do so. These rights are fundamental for all human beings in our world, regardless of nationality, race, religion, sex, language or any other status. Human rights are quite basic, including for example, as in Article 1: All human beings are born free and equal in dignity and rights. The equality mentioned is based on the freedom of discrimination.")
     st.title("History of the Human Rights")
     st.write("The Great Assembly of the UN, established in 1948, published the Universal Declaration of Human Rights, which was the first legal document that protecting all human beings  universally. Before this we saw certain groups of people being discriminated in the constitution of each individual country. This was a big step in fighting against all kinds of discrimination, from racism to sexism, even though we do not stop at that.")
-    st.image("https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg")
+    st.image("https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_the_United_Nations.svg", caption="source: wikimedia, public domain")
     st.title("Adaptation of the Countries")
     st.write("All countries include at least one of the nine obligations in their national law system. 80% of the countries included four or more. If a country was to violate against a law, a trial will be held, because of the country’s violation of International Human Rights Law. The countries should consider those three points mentioned below.")
     st.title("The three Obligations")
@@ -68,9 +69,18 @@ def Podcast_page():
     st.audio("Podcast_final.mp3", format = "audio/mp3", start_time=0)
 
 
-
-
-
+def sources_page():
+    st.title("References")
+    st.write("https://www.ohchr.org/en/issues/pages/whatarehumanrights.aspx")
+    st.write("https://drive.switch.ch/index.php/s/boZd9sEq98ddJv9/download?path=%2F&files=%5B9789004252554%20-%20Hunters%20in%20Transition%5D%20Hunters%20in%20Transition.pdf")
+    st.write("https://drive.switch.ch/index.php/s/boZd9sEq98ddJv9/download?path=%2F&files=64010-Article%20Text-182930-1-10-20100611.pdf")
+    st.write("https://drive.switch.ch/index.php/s/boZd9sEq98ddJv9/download?path=%2F&files=Assimilation%20of%20the%20Sami%20Implementation%20and%20Consequences1.pdf")
+    st.write("https://drive.switch.ch/index.php/s/boZd9sEq98ddJv9/download?path=%2F&files=Borders%20citizenship%20and%20change%20the%20case%20of%20the%20Sami%20people%201751%202008%20(2).pdf")
+    st.write("https://drive.switch.ch/index.php/s/boZd9sEq98ddJv9/download?path=%2F&files=Sapmi.pdf")
+    st.write("https://www.humanrights.ch/de/")
+    st.write("https://www.gfbv.de/fileadmin/redaktion/Reporte_Memoranden/2019/GfbV__Sprachenreport_finale_Version_Web.pdf")
+    st.write("https://ebookcentral.proquest.com/auth/lib/unibasch-ebooks/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Funibasch-ebooks%2Freader.action%3FdocID%3D3408365")
+    st.write("https://site.uit.no/sagastallamin/the-sami-languages/")
 
 # Milestones content
 # ------------------
@@ -80,17 +90,17 @@ def Podcast_page():
 def milestone_year_1850():
     st.title("Transitional Phase")
     st.write("The history of the Sami’s can be divided into five phases. The first is the transitional phase lasting from 1850-1870. The first generation of Norwegian senior civil servants saw the Sami and their language as having an equal footing as the Norwegian’s, very much in accordance to the humanistic and romantic ideals of the period. N.V. Stockfleth firmly believed it was a human right to speak ones native language. This liberal idea was opposed by the Norwegian upper class, the Finnmark, especially as Stockfleth mentioned the equal footing of the Sami in terms of cultural policy. His ideas would be vehemently debated in the Storting, the Norwegian parliament, in 1848.")
-    st.image("Gian2.jpeg")
+    st.image("Gian2.jpeg", caption="source: www.wikimedia.org")
 
 def milestone_year_1851():
     st.title("First Phase")
     st.write("In the first phase of Sami assimilation the government focused its measures on Sami living in transitional districts. A special item in the Norwegian national budget, the Finnefondet or English Lappfund, was created in 1851 in order to bring about change in the language and culture of the Sami. This event marks the beginning of the period of assimilation of the Sami. Through this fund the Norwegian p arliament wanted to ensure “enlightenment” of the Sami people.")
-    st.image("Gian3.jpeg")
+    st.image("Gian3.jpeg", caption="source: www.norgeshistorie.no")
 
 def milestone_year_1860():
     st.title("Tromsø siocese suspicions")
     st.write("In the late 1860s the directors of Tromsø diocese became suspect of Sami teachers. They saw the policy of norweganization ‘‘as much a matter of welfare for the vast majority of the North Norwegian Lappish and Kven population. Norwegianisation paves the way for development and progress even for these people")
-    st.image("Gian4.jpeg")
+    st.image("Gian4.jpeg", caption="source: ww.wikiwand.com")
 
 def milestone_year_1870():
     st.title("Consolidation Phase")
@@ -124,7 +134,7 @@ def milestone_year_1950():
 def milestone_year_1979():
     st.title("Alta Controversy")
     st.write("The end of the Sami assimilation era is marked by the Alta controversy from 1979-1981. In 1978 the Norwegian Water Resources and Energy Directorate planned construction of a dam and a hydroelectric power plant which an artificial lake would be needed for. In order to construct the artificial lake the Sami village of Máze would have to be inundated. The directorate’s plan were met with strong opposition from the Sami resulting in the Alta controversy. The Alta controversy became a symbol of the Sami’s fight against the cultural discrimination faced by the Norwegian government in a collective aspect for both their political autonomy and their material rights.")
-    st.image("Gian5.jpeg")
+    st.image("Gian5.jpeg", caption="source: www.vintagenorway.tumblr.com")
 
 def milestone_year_1980():
     st.title("Sami Delegation Meetings")
@@ -133,12 +143,12 @@ def milestone_year_1980():
 def milestone_year_1987():
     st.title("Sami Act")
     st.write("The Sami Act of 1987 stipulated the responsibilities and powers of the Norwegian Sami parliament and was passed by the Norwegian Parliament on the 12th of June 1987 and took effect on the 14th of February 1989. The first session of the Sami parliament was opened by King Olav V and held on the 9th of October 1989. It sought to enable the Sami people to safeguard and develope their language, culture and way of of life.")
-    st.image("Gian6.jpeg")
+    st.image("Gian6.jpeg", caption="source: www.lovdata.no")
 
 def milestone_year_1989():
     st.title("Sameting")
     st.write("Sami concerns only found little attention in Norwegian state politics. In addition assert themselves in the majority-based parliaments. In 1964 the Sami were granted advisory functions to the Norwegian parliament on Sami matters through the Sami council. The turning point came in 1989 when the Sami parliament, the Sameting, was opened. From this point on the Sami received further competences. Norways national broadcasting company, the NRK, has its own Sami division. They were now able to make their own decisions in areas like education. This is incredibly important for maters like material science. Most Sami artifacts, spread through museums across Europe, can not be conserved through traditional white-European conservation methods. The Sami language was only recently fixated in writing and through assimilation conservation methods were unable to be passed down. Today, institutions now try to recoup the knowledge lost and rediscover the Sami ways of conservation. Many fear that the rise of the internet will bring the incipient of  language death. The university of Tromsø has a big subject are for Sami languages in which they try to build a new technological linguistic infrastructure. ")
-    st.image("Gian7.jpeg")
+    st.image("Gian7.jpeg", caption="source: www.abc.net.au")
 
 
 
@@ -146,8 +156,8 @@ def milestone_year_1989():
 # Config
 # ------
 
-milestones = {1850: milestone_year_1850, 2051: milestone_year_1851, 1860: milestone_year_1860, 1870: milestone_year_1870, 1905: milestone_year_1905, 1921: milestone_year_1921, 1923: milestone_year_1923, 1931: milestone_year_1931, 1936: milestone_year_1936, 1950: milestone_year_1950, 1979: milestone_year_1979, 1980: milestone_year_1980, 1987: milestone_year_1987, 1989: milestone_year_1989}
-sections = {"Home": title_page, "Who are the Sami?": Sami_page, "Cultural and Linguistical Development": Language_page, "Human Rights": Human_page, "The Human Rights of the Sami": milestones_page, "Podcast": Podcast_page}
+milestones = {1850: milestone_year_1850, 1851: milestone_year_1851, 1860: milestone_year_1860, 1870: milestone_year_1870, 1905: milestone_year_1905, 1921: milestone_year_1921, 1923: milestone_year_1923, 1931: milestone_year_1931, 1936: milestone_year_1936, 1950: milestone_year_1950, 1979: milestone_year_1979, 1980: milestone_year_1980, 1987: milestone_year_1987, 1989: milestone_year_1989}
+sections = {"Home": title_page, "Who are the Sami?": Sami_page, "Cultural and Linguistical Development": Language_page, "Human Rights": Human_page, "The Human Rights of the Sami": milestones_page, "Podcast": Podcast_page, "References": sources_page}
 
 
 # Run
